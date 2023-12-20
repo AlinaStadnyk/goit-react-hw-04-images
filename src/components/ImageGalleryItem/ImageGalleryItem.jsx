@@ -8,7 +8,6 @@ export const ImageGalleryItem = ({ photo, openModal }) => {
         alt="alt"
         src={photo.webformatURL}
         onClick={e => {
-          console.log(e);
           openModal(photo.largeImageURL);
         }}
       />

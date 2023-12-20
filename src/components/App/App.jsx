@@ -46,6 +46,9 @@ export const App = () => {
   }, [page, query]);
 
   const handleSubmit = q => {
+    if (query === q) {
+      alert(`You have already looked for a ${query}. Try something else`);
+    }
     setQuery(q);
     setPage(1);
     setPics([]);
